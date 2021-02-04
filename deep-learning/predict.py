@@ -6,6 +6,8 @@ import tensorflow_datasets as tfds
 import numpy as np
 from PIL import Image
 
+# command line tool to classify images
+
 parser = argparse.ArgumentParser(
     description='Parser file for Image Classifier',
 )
