@@ -1,14 +1,7 @@
-###########################################
-# Suppress matplotlib user warnings
-# Necessary for newer version of matplotlib
 import warnings
 warnings.filterwarnings("ignore", category = UserWarning, module = "matplotlib")
-#
-# Display inline matplotlib plots with IPython
 from IPython import get_ipython
 get_ipython().run_line_magic('matplotlib', 'inline')
-###########################################
-
 import matplotlib.pyplot as pl
 import matplotlib.patches as mpatches
 import numpy as np
@@ -21,8 +14,7 @@ def distribution(data, transformed = False):
     """
     Visualization code for displaying skewed distributions of features
     """
-    
-    # Create figure
+
     fig = pl.figure(figsize = (11,5));
 
     # Skewed feature plotting
@@ -59,14 +51,12 @@ def evaluate(results, accuracy, f1):
       - f1: The score for the naive predictor
     """
   
-    # Create figure
     fig, ax = pl.subplots(2, 3, figsize = (11,7))
 
-    # Constants
     bar_width = 0.3
     colors = ['#A00000','#00A0A0','#00A000']
     
-    # Super loop to plot four panels of data
+    # Loop to plot four panels of data
     for k, learner in enumerate(results.keys()):
         for j, metric in enumerate(['train_time', 'acc_train', 'f_train', 'pred_time', 'acc_test', 'f_test']):
             for i in np.arange(3):
