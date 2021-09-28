@@ -5,7 +5,7 @@ This [nanodegree program](https://www.udacity.com/course/intro-to-machine-learni
 ## Projects
 - [Charity ML](https://github.com/XandraV/machine-learning-nanodegree/tree/master/supervised-learning) :octocat:
 
-- [Image Classifier](https://github.com/XandraV/machine-learning-nanodegree/tree/master/deep-learning-image-classifier) :octocat:
+- [Image Classifier](https://github.com/XandraV/machine-learning-nanodegree/tree/master/deep-learning) :octocat:
 
 - [Customer Segments](https://github.com/XandraV/machine-learning-nanodegree/tree/master/unsupervised-learning) :octocat:
 
